@@ -1,0 +1,348 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Reporte del Proceso de Ataque de Texto Plano</title>
+<meta charset="utf-8"/>
+</head>
+<body style ="text-align: center;">
+<h1 style="color:blue;">Reporte del Proceso de Ataque de Texto Plano</h1>
+<h3>Documento Creado el 13/2/2021 a las 0:8:15</h3>
+<h4>(1) Ingreso de texto con el mensaje original convertido en Matriz</h4>
+<p>Documento ingresado por el usuario: C:\Users\Diego\Desktop\Mensaje_Prueba.txt
+<p>La matriz obtenida por el programa: 
+<table align="center" border="1 solid">
+<tr>
+<td>2</td>
+<td>21</td>
+<td>0</td>
+</tr>
+<tr>
+<td>3</td>
+<td>4</td>
+<td>18</td>
+</tr>
+<tr>
+<td>13</td>
+<td>15</td>
+<td>3</td>
+</tr>
+<tr>
+<td>4</td>
+<td>2</td>
+<td>21</td>
+</tr>
+<tr>
+<td>11</td>
+<td>20</td>
+<td>21</td>
+</tr>
+<tr>
+<td>18</td>
+<td>0</td>
+<td>2</td>
+</tr>
+<tr>
+<td>8</td>
+<td>4</td>
+<td>13</td>
+</tr>
+<tr>
+<td>20</td>
+<td>8</td>
+<td>5</td>
+</tr>
+<tr>
+<td>8</td>
+<td>2</td>
+<td>0</td>
+</tr>
+</table>
+<h4>(2) Ingreso de texto con el mensaje original cifrado convertido en Matriz</h4>
+<p>Documento ingresado por el usuario: C:\Users\Diego\Desktop\Mensaje_Prueba_Cifrado.txt
+<p>La matriz obtenida por el programa: 
+<table align="center" border="1 solid">
+<tr>
+<td>17</td>
+<td>3</td>
+<td>2</td>
+</tr>
+<tr>
+<td>11</td>
+<td>25</td>
+<td>3</td>
+</tr>
+<tr>
+<td>25</td>
+<td>21</td>
+<td>4</td>
+</tr>
+<tr>
+<td>17</td>
+<td>5</td>
+<td>22</td>
+</tr>
+<tr>
+<td>6</td>
+<td>23</td>
+<td>2</td>
+</tr>
+<tr>
+<td>24</td>
+<td>10</td>
+<td>3</td>
+</tr>
+<tr>
+<td>1</td>
+<td>0</td>
+<td>5</td>
+</tr>
+<tr>
+<td>24</td>
+<td>3</td>
+<td>23</td>
+</tr>
+<tr>
+<td>12</td>
+<td>8</td>
+<td>8</td>
+</tr>
+</table>
+<h4>(3) Matriz resultante</h4>
+<table align="center" border="1 solid">
+<tr>
+<td>2</td>
+<td>21</td>
+<td>0</td>
+<td>:</td>
+<td>17</td>
+<td>3</td>
+<td>2</td>
+</tr>
+<tr>
+<td>3</td>
+<td>4</td>
+<td>18</td>
+<td>:</td>
+<td>11</td>
+<td>25</td>
+<td>3</td>
+</tr>
+<tr>
+<td>13</td>
+<td>15</td>
+<td>3</td>
+<td>:</td>
+<td>25</td>
+<td>21</td>
+<td>4</td>
+</tr>
+<tr>
+<td>4</td>
+<td>2</td>
+<td>21</td>
+<td>:</td>
+<td>17</td>
+<td>5</td>
+<td>22</td>
+</tr>
+<tr>
+<td>11</td>
+<td>20</td>
+<td>21</td>
+<td>:</td>
+<td>6</td>
+<td>23</td>
+<td>2</td>
+</tr>
+<tr>
+<td>18</td>
+<td>0</td>
+<td>2</td>
+<td>:</td>
+<td>24</td>
+<td>10</td>
+<td>3</td>
+</tr>
+<tr>
+<td>8</td>
+<td>4</td>
+<td>13</td>
+<td>:</td>
+<td>1</td>
+<td>0</td>
+<td>5</td>
+</tr>
+<tr>
+<td>20</td>
+<td>8</td>
+<td>5</td>
+<td>:</td>
+<td>24</td>
+<td>3</td>
+<td>23</td>
+</tr>
+<tr>
+<td>8</td>
+<td>2</td>
+<td>0</td>
+<td>:</td>
+<td>12</td>
+<td>8</td>
+<td>8</td>
+</tr>
+</table>
+<h4>(4) Primera operación realizada en la matriz</h4>
+<p>Fila #1 = (Fila #1*14)modulo27</p></br>
+<p>Fila #2 = (Fila #2- (3*Fila #1))modulo27</p>
+<p>Fila #3 = (Fila #3- (13*Fila #1))modulo27</p>
+<p>Fila #4 = (Fila #4- (4*Fila #1))modulo27</p>
+<p>Fila #5 = (Fila #5- (11*Fila #1))modulo27</p>
+<p>Fila #6 = (Fila #6- (18*Fila #1))modulo27</p>
+<p>Fila #7 = (Fila #7- (8*Fila #1))modulo27</p>
+<p>Fila #8 = (Fila #8- (20*Fila #1))modulo27</p>
+<p>Fila #9 = (Fila #9- (8*Fila #1))modulo27</p>
+</br>
+<h4>(5) Segunda operación realizada en la matriz</h4>
+<p>Fila #2 = (Fila #2*25)modulo27</p></br>
+<p>Fila #1 = (Fila #1- 24*Fila #2)modulo27</p>
+<p>Fila #3 = (Fila #3- (0*Fila #2))modulo27</p>
+<p>Fila #4 = (Fila #4- (14*Fila #2))modulo27</p>
+<p>Fila #5 = (Fila #5- (26*Fila #2))modulo27</p>
+<p>Fila #6 = (Fila #6- (0*Fila #2))modulo27</p>
+<p>Fila #7 = (Fila #7- (1*Fila #2))modulo27</p>
+<p>Fila #8 = (Fila #8- (14*Fila #2))modulo27</p>
+<p>Fila #9 = (Fila #9- (26*Fila #2))modulo27</p>
+</br>
+<h4>(6) Tercera operación realizada en la matriz</h4>
+<p>Fila #6 = (Fila #6*14)modulo27</p></br>
+<p>Fila #1 = (Fila #1- 0*Fila #6)modulo27</p>
+<p>Fila #2 = (Fila #2- 18*Fila #6)modulo27</p>
+<p>Fila #3 = (Fila #3- 3*Fila #6)modulo27</p>
+<p>Fila #4 = (Fila #4- 12*Fila #6)modulo27</p>
+<p>Fila #5 = (Fila #5- 12*Fila #6)modulo27</p>
+<p>Fila #7 = (Fila #7- (22*Fila #6))modulo27</p>
+<p>Fila #8 = (Fila #8- (23*Fila #6))modulo27</p>
+<p>Fila #9 = (Fila #9- (18*Fila #6))modulo27</p>
+</br>
+<h4>(7) Matriz tras las operaciones</h4>
+<table align="center" border="1 solid">
+<tr>
+<td>1</td>
+<td>0</td>
+<td>0</td>
+<td>:</td>
+<td>1</td>
+<td>0</td>
+<td>1</td>
+</tr>
+<tr>
+<td>0</td>
+<td>1</td>
+<td>0</td>
+<td>:</td>
+<td>2</td>
+<td>4</td>
+<td>0</td>
+</tr>
+<tr>
+<td>0</td>
+<td>0</td>
+<td>0</td>
+<td>:</td>
+<td>0</td>
+<td>0</td>
+<td>0</td>
+</tr>
+<tr>
+<td>0</td>
+<td>0</td>
+<td>0</td>
+<td>:</td>
+<td>0</td>
+<td>0</td>
+<td>0</td>
+</tr>
+<tr>
+<td>0</td>
+<td>0</td>
+<td>0</td>
+<td>:</td>
+<td>0</td>
+<td>0</td>
+<td>0</td>
+</tr>
+<tr>
+<td>0</td>
+<td>0</td>
+<td>1</td>
+<td>:</td>
+<td>3</td>
+<td>5</td>
+<td>6</td>
+</tr>
+<tr>
+<td>0</td>
+<td>0</td>
+<td>0</td>
+<td>:</td>
+<td>0</td>
+<td>0</td>
+<td>0</td>
+</tr>
+<tr>
+<td>0</td>
+<td>0</td>
+<td>0</td>
+<td>:</td>
+<td>0</td>
+<td>0</td>
+<td>0</td>
+</tr>
+<tr>
+<td>0</td>
+<td>0</td>
+<td>0</td>
+<td>:</td>
+<td>0</td>
+<td>0</td>
+<td>0</td>
+</tr>
+</table>
+<h4>(8)Matriz Resultaten tras reducir el lado derecho de la matriz calculada</h4>
+<table align="center" border="1 solid">
+<tr>
+<td>1</td>
+<td>0</td>
+<td>1</td>
+</tr>
+<tr>
+<td>2</td>
+<td>4</td>
+<td>0</td>
+</tr>
+<tr>
+<td>3</td>
+<td>5</td>
+<td>6</td>
+</tr>
+</table>
+<h4>(9)Matriz Clave A</h4>
+<table align="center" border="1 solid">
+<tr>
+<td>1</td>
+<td>2</td>
+<td>3</td>
+</tr>
+<tr>
+<td>0</td>
+<td>4</td>
+<td>5</td>
+</tr>
+<tr>
+<td>1</td>
+<td>0</td>
+<td>6</td>
+</tr>
+</table>
+</body>
+</html>
